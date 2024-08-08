@@ -7,23 +7,28 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             color: #333;
             margin: 0;
             padding: 0;
             overflow-x: hidden;
         }
         .container {
-            width: 100%;
-            margin: 0 auto;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            position: relative;
         }
         header {
             text-align: center;
             padding: 40px 20px;
-            background-color: #007BFF;
+            background-color: rgba(0, 123, 255, 0.8);
             color: #fff;
+            border-radius: 15px 15px 0 0;
         }
         header img {
             border-radius: 50%;
@@ -55,9 +60,10 @@
             width: 45%;
             margin: 5px;
             padding: 10px;
-            background: #e0f7fa;
+            background: rgba(224, 247, 250, 0.9);
             border-radius: 5px;
             list-style: none;
+            text-align: center;
         }
         .contact-info {
             display: flex;
@@ -76,10 +82,15 @@
         .case {
             width: 45%;
             margin: 10px 0;
-            background: #f9f9f9;
+            background: rgba(249, 249, 249, 0.9);
             border: 1px solid #ddd;
             border-radius: 5px;
             overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .case:hover {
+            transform: scale(1.05);
         }
         .case img {
             width: 100%;
@@ -95,6 +106,24 @@
             top: 10%;
             right: 10%;
             animation: float 6s infinite;
+        }
+        .interaction {
+            text-align: center;
+            padding: 20px;
+        }
+        .interaction button {
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .interaction button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
         }
         @keyframes bounce {
             0%, 20%, 50%, 80%, 100% {
@@ -157,6 +186,13 @@
                         <p>几何图形的设计赋予这条丝巾简洁而现代的风格，是职场女性的不二选择。</p>
                     </div>
                 </li>
+                <li class="case">
+                    <img src="silk-scarf-4.jpg" alt="经典复古丝巾">
+                    <div class="case-content">
+                        <h3>经典复古丝巾</h3>
+                        <p>经典的复古图案与现代设计的结合，使这条丝巾既时尚又优雅。</p>
+                    </div>
+                </li>
             </ul>
         </section>
 
@@ -168,6 +204,7 @@
                 <li>图案创作</li>
                 <li>面料选择</li>
                 <li>时尚潮流分析</li>
+                <li>市场推广</li>
             </ul>
         </section>
 
@@ -177,6 +214,12 @@
                  <li>支付宝：万事利丝巾定制</li>
                 <li>微信公众号：万事利AIGC实验室</li>
             </ul>
+        </section>
+
+        <section class="interaction">
+            <h2>互动区域</h2>
+            <p>点击按钮了解更多关于小桑蚕的信息！</p>
+            <button onclick="alert('感谢您的关注！')">点击我</button>
         </section>
     </div>
 
