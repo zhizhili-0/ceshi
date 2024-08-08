@@ -14,17 +14,16 @@
             overflow-x: hidden;
         }
         .container {
-            width: 80%;
-            max-width: 800px;
-            margin: 20px auto;
+            width: 100%;
+            margin: 0 auto;
             background: #fff;
-            padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            position: relative;
         }
         header {
             text-align: center;
-            padding: 20px;
+            padding: 40px 20px;
+            background-color: #007BFF;
+            color: #fff;
         }
         header img {
             border-radius: 50%;
@@ -35,9 +34,9 @@
         h1 {
             margin: 10px 0;
             font-size: 2.5em;
-            color: #333;
         }
         section {
+            padding: 20px;
             margin-bottom: 20px;
         }
         h2 {
@@ -45,17 +44,12 @@
             color: #007BFF;
             border-bottom: 2px solid #007BFF;
             padding-bottom: 5px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
         .skills {
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-around;
         }
         .skills li {
             width: 45%;
@@ -63,6 +57,36 @@
             padding: 10px;
             background: #e0f7fa;
             border-radius: 5px;
+            list-style: none;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .contact-info li {
+            margin: 10px 0;
+            list-style: none;
+        }
+        .case-studies {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .case {
+            width: 45%;
+            margin: 10px 0;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .case img {
+            width: 100%;
+            height: auto;
+        }
+        .case-content {
+            padding: 15px;
         }
         .floating {
             width: 100px;
@@ -111,10 +135,28 @@
 
         <section>
             <h2>设计作品</h2>
-            <ul>
-                <li>作品一：绚丽花卉丝巾</li>
-                <li>作品二：抽象艺术丝巾</li>
-                <li>作品三：现代几何丝巾</li>
+            <ul class="case-studies">
+                <li class="case">
+                    <img src="silk-scarf-1.jpg" alt="绚丽花卉丝巾">
+                    <div class="case-content">
+                        <h3>绚丽花卉丝巾</h3>
+                        <p>这条丝巾的设计灵感来自于春天盛开的花朵，颜色鲜艳，图案细腻，完美展现了自然的美丽。</p>
+                    </div>
+                </li>
+                <li class="case">
+                    <img src="silk-scarf-2.jpg" alt="抽象艺术丝巾">
+                    <div class="case-content">
+                        <h3>抽象艺术丝巾</h3>
+                        <p>抽象的图案和大胆的色彩使这条丝巾充满了现代艺术的气息，适合追求个性的时尚达人。</p>
+                    </div>
+                </li>
+                <li class="case">
+                    <img src="silk-scarf-3.jpg" alt="现代几何丝巾">
+                    <div class="case-content">
+                        <h3>现代几何丝巾</h3>
+                        <p>几何图形的设计赋予这条丝巾简洁而现代的风格，是职场女性的不二选择。</p>
+                    </div>
+                </li>
             </ul>
         </section>
 
@@ -131,8 +173,8 @@
 
         <section>
             <h2>联系方式</h2>
-            <ul>
-                <li>支付宝：万事利丝巾定制</li>
+            <ul class="contact-info">
+                 <li>支付宝：万事利丝巾定制</li>
                 <li>微信公众号：万事利AIGC实验室</li>
             </ul>
         </section>
