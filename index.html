@@ -7,11 +7,14 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            background: linear-gradient(135deg, #ff7f50 0%, #ff6347 100%); /* 橙色渐变背景 */
             color: #333;
             margin: 0;
             padding: 0;
             overflow-x: hidden;
+            background-image: url('logo-pattern.png'); /* 添加暗纹 Logo 花纹背景 */
+            background-repeat: repeat; /* 背景图片平铺 */
+            background-size: cover; /* 背景图片覆盖整个区域 */
         }
         .container {
             width: 90%;
@@ -26,7 +29,7 @@
         header {
             text-align: center;
             padding: 40px 20px;
-            background-color: rgba(0, 123, 255, 0.8);
+            background-color: rgba(255, 87, 34, 0.8); /* 橙色背景，带透明度 */
             color: #fff;
             border-radius: 15px 15px 0 0;
         }
@@ -46,8 +49,8 @@
         }
         h2 {
             font-size: 1.8em;
-            color: #007BFF;
-            border-bottom: 2px solid #007BFF;
+            color: #ff5722; /* 橙色标题 */
+            border-bottom: 2px solid #ff5722;
             padding-bottom: 5px;
             margin-bottom: 15px;
         }
@@ -60,7 +63,7 @@
             width: 45%;
             margin: 5px;
             padding: 10px;
-            background: rgba(224, 247, 250, 0.9);
+            background: rgba(255, 239, 217, 0.9);
             border-radius: 5px;
             list-style: none;
             text-align: center;
@@ -116,13 +119,13 @@
             font-size: 1em;
             border: none;
             border-radius: 5px;
-            background-color: #007BFF;
+            background-color: #ff5722; /* 橙色按钮 */
             color: #fff;
             cursor: pointer;
             transition: background-color 0.3s, transform 0.3s;
         }
         .interaction button:hover {
-            background-color: #0056b3;
+            background-color: #e64a19; /* 橙色按钮悬停效果 */
             transform: scale(1.05);
         }
         @keyframes bounce {
@@ -211,7 +214,7 @@
         <section>
             <h2>联系方式</h2>
             <ul class="contact-info">
-                 <li>支付宝：万事利丝巾定制</li>
+                <li>支付宝：万事利丝巾定制</li>
                 <li>微信公众号：万事利AIGC实验室</li>
             </ul>
         </section>
